@@ -1,0 +1,10 @@
+<div class="d-flex flex-column my-card-photo">
+    <div class="my-card-head" [ngStyle]="{'background-color':color}" >
+        <img [src]="image.src" [alt]="image.alt">
+    </div>
+    <div class="my-card-body">
+        <p class="p-0" *ngFor="let text of texts" >
+            {{text}}
+        </p>
+    </div>
+</div>
